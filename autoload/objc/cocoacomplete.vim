@@ -18,6 +18,11 @@ fun! objc#cocoacomplete#Complete(findstart, base)
 		let matches = []
 		let complete_type = s:GetCompleteType(line('.'), col('.') - 1)
 
+		" Use classes as fallback if complete_type is missing
+		if (complete_type == '')
+			let complete_type = 'classes'
+		endif
+
 		if complete_type == 'methods'
 			call s:Complete(a:base, ['alloc', 'init', 'retain', 'release',
 			                       \ 'autorelease', 'retainCount',

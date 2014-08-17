@@ -17,4 +17,5 @@
 
 ## Thanks
 
-This is a fork of Michael Sanders ([@msanders](https://github.com/msanders)) [cocoa.vim](https://github.com/msanders/cocoa.vim). Without his tremendous work this would have never happened.
+This is a fork of Michael Sanders ([@msanders](https://github.com/msanders)) [cocoa.vim](https://github.com/msanders/cocoa.vim).
+Without his tremendous work this would have never happened.

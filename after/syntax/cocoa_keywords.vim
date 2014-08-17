@@ -88,6 +88,6 @@ hi link coreGraphicsConstant Constant
 hi link coreImageClass Special
 
 hi link cocoaTouchFunction Keyword
-hi link cocoaTouchClass Keyword
+hi link cocoaTouchClass Special
 hi link cocoaTouchConstant Constant
 hi link cocoaTouchNotification Constant

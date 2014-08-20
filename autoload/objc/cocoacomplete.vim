@@ -18,7 +18,7 @@ fun! objc#cocoacomplete#Complete(findstart, base)
 		let matches = []
 		let complete_type = s:GetCompleteType(line('.'), col('.') - 1)
 
-		" Use classes as fallback if complete_type is missing
+		" Use classes as fallback if complete_type is empty
 		if (complete_type == '')
 			let complete_type = 'classes'
 		endif

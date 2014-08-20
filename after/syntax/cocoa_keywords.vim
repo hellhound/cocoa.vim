@@ -18,7 +18,7 @@ syn keyword cocoaType containedin=objcMessage CGFloat UIAccelerationValue UIAcce
 syn keyword cocoaConstant containedin=objcMessage NSAttachmentCharacter UILayoutPriorityDefaultHigh UILayoutPriorityDefaultLow UILayoutPriorityFittingSizeLevel UILayoutPriorityRequired UIPrintJobFailedError UIPrintNoContentError UIPrintUnknownImageFormatError UIPrintingNotAvailableError UISegmentedControlNoSegment
 
 " Cocoa Notifications
-syn keyword cocoaNotification containedin=objcMessage 
+syn keyword cocoaNotification containedin=objcMessage
 
 hi link cocoaFunction Keyword
 hi link cocoaClass Special

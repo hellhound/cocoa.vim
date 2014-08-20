@@ -48,11 +48,9 @@ def output_file(fname=None):
     if not os.path.isdir(os.path.dirname(fname)):
         os.mkdir(os.path.dirname(fname))
 
-    cocoa_frameworks = ('Foundation', 'AppKit', 'AddressBook', 'CoreData',
-                        'PreferencePanes', 'QTKit', 'ScreenSaver',
-                        'SyncServices', 'WebKit')
-    iphone_frameworks = ('UIKit', 'GameKit')
-    iphone_sdk_path = '/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk'
+    cocoa_frameworks = ('Foundation', 'AppKit', 'AddressBook', 'Cocoa', 'CloudKit', 'CoreAudio', 'CoreData', 'CoreFoundation', 'CoreGraphics', 'CoreLocation', 'CoreServices', 'EventKit', '' ,'PreferencePanes', 'QTKit', 'ScreenSaver', 'Security', 'StoreKit' ,'SyncServices', 'WebKit')
+    iphone_frameworks = ('CFNetwork', 'CoreAudio', 'CoreData', 'CoreFoundation', 'CoreGraphics', 'CoreImage', 'CoreLocation', 'EventKit', 'EventKitUI', 'Foundation', 'MapKit', 'QuartzCore', 'Security', 'StoreKit', 'UIKit', 'GameKit', 'WebKit')
+    iphone_sdk_path = '/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk'
     headers_and_frameworks = find_headers('', cocoa_frameworks).items() + \
                              find_headers(iphone_sdk_path, iphone_frameworks).items()
 

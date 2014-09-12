@@ -11,8 +11,7 @@ ru after/syntax/cocoa_keywords.vim
 
 syn match objcDirective '@synthesize\|@property\|@optional\|@required' display
 syn keyword objcType IBOutlet IBAction Method
-syn keyword objcConstant @catch @class @defs @dynamic @encode @end @finally @implementation @interface @optional @private @property @protected @protocol @public @required @selector @synchronized @synthesize @throw @autoreleasepool @try BOOL Class IBAction IBOutlet NO Nil SEL YES __autoreleasing __typeof__ __unsafe_unretained __block __bridge __bridge_retained __bridge_transfer __attribute__ __strong __weak assign auto getter id nil nonatomic readonly readwrite setter super instancetype copy weak strong unsafe_unretained retain
-
+syn keyword objcConstant @catch @class @defs @dynamic @encode @end @finally @implementation @interface @optional @private @property @protected @protocol @public @required @selector @synchronized @synthesize @throw @autoreleasepool @try BOOL Class IBAction IBOutlet NO Nil SEL YES __autoreleasing __typeof__ __unsafe_unretained __block __bridge __bridge_retained __bridge_transfer __attribute__ __strong __weak assign auto getter id nil nonatomic readonly readwrite setter super instancetype mutableCopy copy weak strong unsafe_unretained retain new alloc
 syn match parens /[(){}]/
 syn match braces /[\[\]]/
 syn match ops "[-&|+<>=*!~\;:]"
